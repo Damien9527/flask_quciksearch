@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - microblog</title>
+    {% else %}
+    <title>microblog</title>
+    {% endif %}
+  </head>
+  <body>
+    <h1>Hi, {{user.nickname}}!</h1>
+    {% for post in posts %}
+    <p>{{post.author.nickname}} says:<br> <b>{{post.body}}</b></p>
+    {% endfor %}
+
+
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+
+  </body>
+
+</html>

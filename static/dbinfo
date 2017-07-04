@@ -1,0 +1,14 @@
+
+///
+#创建用户表
+create table login_user(
+    u_id bigint not null primary key AUTO_INCREMENT,
+    name VARCHAR(40) not null,
+    password VARCHAR(40) not null,
+    phone bigint ,
+    sex char(4) ,
+    updtime TIMESTAMP,
+    createtime date
+);
+
+

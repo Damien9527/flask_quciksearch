@@ -1,0 +1,4 @@
+[mysql]
+host=10.39.54.215
+passwd=123321
+db=flask

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Develop by Flask！</title>
+    <style >
+    form{height:160px; width:260px;border: 2px solid black;}
+    </style>
+
+</head>
+<body>
+
+<br>
+<br>
+<p  align="center">{{daymessage}}</p>
+<hr>
+<br>
+<br>
+
+<table align="center" >
+    <tr><td>
+<form  align="center" action="" method="post" name="login">
+
+  {{form.hidden_tag()}}
+  <p>账号  {{form.name}}</p>
+  <p>密码  {{form.password}}</p>
+  <p>{{form.remember_me}} Remember Me</p>
+  <p><input type="submit" value="Sign In"></p>
+
+</form>
+    </td></tr>
+</table>
+
+
+
+
+</body>
+</html>
